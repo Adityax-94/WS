@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute to Samay Raina - Comedian & Chess Streamer</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-section .tagline {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .hero-image {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            margin-top: 30px;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-img {
+            overflow: hidden;
+            border-radius: 10px;
+            height: 250px;
+        }
+
+        .gallery-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .gallery-img:hover img {
+            transform: scale(1.1);
+        }
+
+        section {
+            scroll-margin-top: 80px;
+        }
+
+        footer {
+            
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 60px;
+        }
+
+        .blockquote {
+            border-left: 4px solid #667eea;
+            padding-left: 20px;
+            font-size: 1.3rem;
+            font-style: italic;
+            color: #333;
+        }
+
+        .timeline-item {
+            padding-left: 30px;
+            border-left: 3px solid #667eea;
+            margin-bottom: 25px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -9px;
+            top: 0;
+            width: 15px;
+            height: 15px;
+            background-color: #667eea;
+            border-radius: 50%;
+        }
+
+        .timeline-item h5 {
+            color: #667eea;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">Samay Raina</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#career">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achievements">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#legacy">Legacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <h1>Tribute to Samay Raina</h1>
+            <p class="tagline">Comedian, Chess Streamer, and Digital Entertainer</p>
+
+            <img src="assests/main.webp" 
+                 alt="Samay Raina - Comedian and Chess Streamer" 
+                 class="hero-image">
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">About Samay Raina</h2>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="assests/potrait.webp" 
+                         alt="Samay Raina Portrait" 
+                         class="img-fluid rounded shadow">
+                </div>
+
+                <div class="col-lg-6">
+                    <h3 class="mb-3">Background & Rise to Fame</h3>
+                    <p>
+                        Samay Raina is one of India's most talented and versatile entertainers. 
+                        Born and raised in India, he discovered his passion for stand-up comedy 
+                        at a young age and quickly became known for his witty humor and unique comedic style.
+                    </p>
+                    <p>
+                        His breakthrough came through his participation in the comedy competition 
+                        <strong>Comicstaan</strong>, where his performances captivated audiences and 
+                        judges alike. What sets Samay apart is his ability to blend humor with intellectual 
+                        banter, often incorporating references to chess and current events.
+                    </p>
+                    <p>
+                        Over the years, Samay has built a massive following on YouTube, Twitch, and 
+                        Instagram. He has collaborated with fellow comedians and created original content 
+                        that showcases both his comedic talent and his passion for chess. His streams and 
+                        videos have been viewed by millions, making him one of India's most influential 
+                        digital entertainers.
+                    </p>
+                    <p>
+                        Today, Samay Raina represents a new generation of Indian entertainers who have 
+                        successfully leveraged digital platforms to reach global audiences while staying 
+                        connected to their roots.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="career" class="py-5 bg-light">
+    32%
+    
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Career Timeline</h2>
+
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="timeline-item">
+                        <h5>Early Years (2015-2017)</h5>
+                        <p>
+                            Samay began his comedy journey, performing at local comedy clubs and open 
+                            mic nights. He developed his unique style and started building a local fanbase 
+                            through his distinct humor and sharp observations about everyday life.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h5>Comicstaan Victory (2018)</h5>
+                        <p>
+                            Samay's talent caught national attention when he won <strong>Comicstaan Season 2</strong>, 
+                            one of India's most prestigious comedy competitions. This victory launched him 
+                            into the mainstream and established him as a top comedic talent in the country.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h5>YouTube & Streaming Growth (2019-2020)</h5>
+                        <p>
+                            Samay started creating content on YouTube, sharing his comedy sketches, stand-up 
+                            performances, and original comedy videos. His channel grew rapidly as audiences 
+                            appreciated his fresh approach to comedy and engaging personality.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h5>Chess Streaming (2020-Present)</h5>
+                        <p>
+                            During the lockdown period, Samay discovered his passion for chess streaming on 
+                            Twitch. He combined his comedic talent with chess commentary, creating an entirely 
+                            new genre of entertainment. His chess streams became wildly popular, attracting 
+                            thousands of viewers daily.
+                        </p>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h5>Collaborations & Tours (2021-Present)</h5>
+                        <p>
+                            Samay has collaborated with renowned chess players like Viswanathan Anand and 
+                            other grandmasters, bringing credibility and excitement to his streams. He has 
+                            also conducted successful stand-up comedy tours across India and internationally, 
+                            selling out venues and building an ever-growing fanbase.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="achievements" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Achievements</h2>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary mb-3">🏆</h3>
+                            <h5 class="card-title">Comicstaan Winner</h5>
+                            <p class="card-text">
+                                Won Comicstaan Season 2, establishing himself as one of India's 
+                                premier comedians and earning national recognition.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary mb-3">♟️</h3>
+                            <h5 class="card-title">Chess Streaming Pioneer</h5>
+                            <p class="card-text">
+                                Pioneered the combination of comedy and chess streaming in India, 
+                                creating a unique entertainment format that has gained millions of viewers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary mb-3">🤝</h3>
+                            <h5 class="card-title">Grandmaster Collaborations</h5>
+                            <p class="card-text">
+                                Collaborated with world-renowned chess players and grandmasters, 
+                                bringing credibility and mainstream appeal to competitive chess.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary mb-3">📺</h3>
+                            <h5 class="card-title">Multi-Platform Success</h5>
+                            <p class="card-text">
+                                Built massive followings across YouTube, Twitch, Instagram, and other 
+                                platforms with millions of combined followers and viewers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary mb-3">🎭</h3>
+                            <h5 class="card-title">Stand-up Tours</h5>
+                            <p class="card-text">
+                                Conducted successful comedy tours across India and internationally, 
+                                selling out venues and performing for thousands of live audiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h3 class="card-title text-primary mb-3">🌟</h3>
+                            <h5 class="card-title">Digital Content Creator</h5>
+                            <p class="card-text">
+                                Created original comedy content that combines humor with intelligence, 
+                                influencing a new generation of online entertainment creators in India.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <blockquote class="blockquote">
+                        <p>
+                            "I do it for &#128514; emoji..."
+                        </p>
+                        <footer class="blockquote-footer mt-3">Samay Raina</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Gallery</h2>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-img">
+                        <img src="assests/standup.webp" 
+                             alt="Samay Raina Stand-up Performance">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-img">
+                        <img src="assests/chess.webp" 
+                             alt="Samay Raina Chess Streaming">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-img">
+                        <img src="assests/audience.jpg" 
+                             alt="Samay Raina with Audience">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-img">
+                        <img src="assests/event.png" 
+                             alt="Samay Raina at Comedy Event">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-img">
+                        <img src="assests/media.jpg" 
+                             alt="Samay Raina Media Appearance">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-img">
+                        <img src="assests/live stream.avif" 
+                             alt="Samay Raina Live Stream">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-img">
+                        <img src="assests/collab.jpg" 
+                             alt="Samay Raina Collaboration">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-img">
+                        <img src="assests/tour.avif" 
+                             alt="Samay Raina Tour Performance">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-img">
+                        <img src="assests/content.png" 
+                             alt="Samay Raina Content Creation">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="legacy" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Legacy & Impact</h2>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary mb-3">Stand-up Comedy</h5>
+                            <p class="card-text">
+                                Samay has redefined stand-up comedy in India by bringing intellectual 
+                                humor to mainstream audiences. He has inspired countless aspiring comedians 
+                                to pursue their passion and explore new comedic styles.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary mb-3">Chess Streaming</h5>
+                            <p class="card-text">
+                                Samay has single-handedly transformed chess streaming into a mainstream 
+                                entertainment format in India. By combining humor with strategic gameplay, 
+                                he has made chess accessible and entertaining to millions of viewers 
+                                worldwide.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary mb-3">Digital Entertainment</h5>
+                            <p class="card-text">
+                                As a digital pioneer, Samay represents the new age of Indian entertainment. 
+                                He has shown that creators can build massive audiences while maintaining 
+                                authenticity, creativity, and staying true to their unique vision.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-lg-10 mx-auto">
+                    <h4 class="mb-3 text-center">Overall Impact on Indian Entertainment</h4>
+                    <p class="text-center">
+                        Samay Raina's journey represents the evolution of Indian entertainment in the 
+                        digital age. He has demonstrated that success comes from authenticity, hard work, 
+                        and the courage to innovate. His impact extends beyond comedy and chess—he has 
+                        inspired millions to pursue their passions and has proven that India has world-class 
+                        entertainment talent. Through his streams, performances, and content, he continues 
+                        to entertain, educate, and inspire audiences globally.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="mb-2">
+                <strong>A Tribute to Samay Raina</strong>
+            </p>
+            <p class="mb-2">
+                Celebrating his contributions to comedy, chess streaming, and digital entertainment
+            </p>
+            <p class="text-muted">
+                © 2026 | Created as a tribute to an inspiring entertainer
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
