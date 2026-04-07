@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>Animations</title>
+        <style>
+            .parent{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 100vh;
+
+                transition: all ease-in-out;
+            }
+            
+            .spinner{
+                
+                border-radius: 50%;
+                
+                height: 50px;
+                width: 50px;
+                animation: ani 2s linear infinite;
+                border-top: 5px dotted black;
+                
+                
+            }
+            
+            @keyframes ani {
+                0%{
+                    transform: rotate(0deg);
+                }
+
+
+                100%{
+                    transform: rotate(360deg);
+                }
+                
+            }
+            .heart {
+                margin-left: 50px;
+                height: 90px;
+                width: 100px;
+                animation: heartbeat 500ms infinite;
+                
+
+            }
+            @keyframes heartbeat{
+                50%{
+
+               
+                    transform: scale(1.5)
+                
+                     }
+
+            }
+            
+            .ball {
+                margin-left: 30px;
+                height: 50px;
+                width: 50px;
+                background-color: rgb(230, 48, 226);
+                border-radius: 50%;
+                
+            }
+            #b1{
+                animation: bounce 800ms infinite;
+
+            }
+                        #b2{
+                animation: bounce 1s infinite;
+
+            }
+                        #b3{
+                animation: bounce 2s infinite;
+
+            }
+            
+            @keyframes bounce {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-200px);
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+        <div class="spinner"></div>
+        <div class="heart"> <img src="images.png"></div>
+        <div class="ball" id="b1"></div>
+        <div class="ball" id="b2"></div>
+        <div class="ball" id="b3"></div>
+        </div>
+
+        
+    </body>
+</html>

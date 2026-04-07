@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Table</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f7f9fc;
+      font-family: 'DM Sans', sans-serif;
+      padding: 40px 16px;
+    }
+
+    .wrapper { width: 100%; max-width: 900px; }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 2rem;
+      color: #111;
+    }
+
+    .sub {
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 40px;
+    }
+
+    .plans {
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .plan {
+      background: #fff;
+      border: 2px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 36px 28px;
+      width: 260px;
+      text-align: center;
+    }
+
+    .plan.highlight {
+      border-color: #4f46e5;
+      background: #4f46e5;
+      color: #fff;
+      transform: scale(1.04);
+      box-shadow: 0 12px 32px rgba(79,70,229,0.3);
+    }
+
+    .plan-name {
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 12px;
+    }
+
+    .plan.highlight .plan-name { color: rgba(255,255,255,0.7); }
+
+    .price {
+      font-size: 2.6rem;
+      font-weight: 700;
+      color: #111;
+      margin-bottom: 4px;
+    }
+
+    .plan.highlight .price { color: #fff; }
+
+    .per {
+      font-size: 0.82rem;
+      color: #aaa;
+      margin-bottom: 24px;
+    }
+
+    .plan.highlight .per { color: rgba(255,255,255,0.65); }
+
+    .features {
+      list-style: none;
+      margin-bottom: 28px;
+      text-align: left;
+    }
+
+    .features li {
+      padding: 7px 0;
+      font-size: 0.9rem;
+      color: #555;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .plan.highlight .features li {
+      color: rgba(255,255,255,0.85);
+      border-bottom-color: rgba(255,255,255,0.15);
+    }
+
+    .features li::before { content: "✓  "; color: #4f46e5; font-weight: 700; }
+    .plan.highlight .features li::before { color: #a5b4fc; }
+
+    .btn {
+      display: block;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      cursor: pointer;
+      border: 2px solid #4f46e5;
+      background: transparent;
+      color: #4f46e5;
+      transition: background 0.2s, color 0.2s;
+      text-decoration: none;
+    }
+
+    .btn:hover { background: #4f46e5; color: #fff; }
+
+    .plan.highlight .btn {
+      background: #fff;
+      color: #4f46e5;
+      border-color: #fff;
+    }
+
+    .plan.highlight .btn:hover { background: #e0e7ff; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Choose Your Plan</h1>
+    <p class="sub">Simple pricing for every stage — by Aditya Chavan</p>
+    <div class="plans">
+      <div class="plan">
+        <div class="plan-name">Basic</div>
+        <div class="price">₹499</div>
+        <div class="per">per month</div>
+        <ul class="features">
+          <li>5 Projects</li>
+          <li>10 GB Storage</li>
+          <li>Email Support</li>
+          <li>Basic Analytics</li>
+        </ul>
+        <a class="btn" href="#">Get Started</a>
+      </div>
+
+      <div class="plan highlight">
+        <div class="plan-name">Standard</div>
+        <div class="price">₹999</div>
+        <div class="per">per month</div>
+        <ul class="features">
+          <li>20 Projects</li>
+          <li>50 GB Storage</li>
+          <li>Priority Support</li>
+          <li>Advanced Analytics</li>
+        </ul>
+        <a class="btn" href="#">Get Started</a>
+      </div>
+
+      <div class="plan">
+        <div class="plan-name">Premium</div>
+        <div class="price">₹1999</div>
+        <div class="per">per month</div>
+        <ul class="features">
+          <li>Unlimited Projects</li>
+          <li>500 GB Storage</li>
+          <li>24/7 Support</li>
+          <li>Custom Reports</li>
+        </ul>
+        <a class="btn" href="#">Get Started</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

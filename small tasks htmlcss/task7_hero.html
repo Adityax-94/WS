@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya Chavan</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body { font-family: 'Lato', sans-serif; }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1400');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(5, 10, 25, 0.70);
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      padding: 0 20px;
+      max-width: 700px;
+    }
+
+    .tag {
+      display: inline-block;
+      background: rgba(244,166,35,0.15);
+      border: 1px solid #f4a623;
+      color: #f4a623;
+      font-size: 0.78rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: clamp(3rem, 8vw, 5.5rem);
+      color: #fff;
+      line-height: 1;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+
+    h1 span { color: #f4a623; }
+
+    p {
+      font-size: 1rem;
+      color: rgba(255,255,255,0.7);
+      font-weight: 300;
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+
+    .cta {
+      display: inline-block;
+      padding: 14px 38px;
+      background: #f4a623;
+      color: #111;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: 50px;
+      text-decoration: none;
+      letter-spacing: 0.5px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .cta:hover { background: #e09310; transform: translateY(-2px); }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="tag">B.Tech Student &amp; Developer</div>
+      <h1>Hi, I'm <span>Aditya</span> Chavan</h1>
+      <p>I build modern web experiences using HTML, CSS, JavaScript and React — and I'm diving deep into the world of AI/ML.</p>
+      <a class="cta" href="https://github.com/Adityax-94">View My Work</a>
+    </div>
+  </section>
+</body>
+</html>

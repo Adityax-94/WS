@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<head>
+    <title>Round Card</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+
+
+
+        }
+
+        .hugecon{
+
+            height: 700px;
+            width: 700px;
+            background-color: rgb(50, 140, 237);
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            margin-left: 300px;
+
+        }
+
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            height: 600px;
+            width: 600px;
+            
+
+                overflow: visible;
+            
+        }
+        .img{
+            display: flex;
+  
+            
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            scale: 1.3;
+
+            
+ 
+        }
+        img{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+        }
+
+
+    
+
+    </style>
+
+</head>
+<body>
+    <div class="hugecon">
+    <div class="container">
+        <div class="img"><img src="/panda.jpg"></div>
+        <div class="dia"><img src="/sky.jpg"></div>
+        <div class="img"><img src="/zebra.jpg"></div>
+        <div class="dia"><img src="/snow.avif"></div>
+        <div class="img"><img src="/cham.avif"></div>
+        <div class="dia"><img src="/jungle.jpg"></div>
+        <div class="img"><img src="/fox.avif"></div>
+        <div class="dia"><img src="/ocean.jpg"></div>
+        <div class="img"><img src="/deer.jpg"></div>
+
+    </div>
+    </div>
+</body>

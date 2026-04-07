@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<head>
+    <title>2222</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,1fr);
+            height: 600px;
+            width: 600px;
+            background-color: rgb(235, 226, 58);
+            margin-left: 400px;
+
+                overflow: visible;
+            
+        }
+        .img{
+            display: flex;
+  
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+ 
+        }
+        img{
+            height: 300px;
+            width: 300px;
+            
+        }
+        .dia{
+            height: 100px;
+            width: 100px;
+        }
+    
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <img src="/panda.jpg">
+        <div class="dia"></div>
+        <img src="/zebra.jpg">
+        <div class="dia"></div>
+       <img src="/cham.avif">
+        <div class="dia"></div>
+       <img src="/fox.avif">
+        <div class="dia"></div>
+       <img src="/deer.jpg">
+
+    </div>
+</body>

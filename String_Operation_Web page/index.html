@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operation on String</title>
+
+  <!-- Bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f5f5f5;
+    }
+
+    .header {
+      background-color: #2f3e46;
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    .input-box {
+      max-width: 700px;
+      margin: 20px auto;
+    }
+
+    .result-box {
+      background-color: #6c757d;
+      color: white;
+      width: 300px;
+      margin: 20px auto;
+      text-align: center;
+      padding: 10px;
+      border-radius: 25px;
+      font-weight: 500;
+    }
+
+    .btn-container {
+      max-width: 800px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .btn-custom {
+      border: 1px solid #ccc;
+      background-color: white;
+      padding: 6px 12px;
+      font-size: 13px;
+    }
+
+    .btn-highlight {
+      background-color: black;
+      color: white;
+    }
+  </style>
+
+  
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    Operation on string in Javascript
+  </div>
+
+  <!-- Input -->
+  <div class="input-box">
+    <textarea class="form-control" id="ta" rows="2" placeholder="Add paragraph here"></textarea>
+  </div>
+
+  <!-- Result -->
+  <div class="result-box" id="res">
+    Result
+  </div>
+
+  <!-- Buttons -->
+  <div class="btn-container">
+    <button class="btn btn-custom" onclick="check_vowels()">Check Vowels</button>
+    <button class="btn btn-custom" onclick="check_consonents()">Check consonents</button>
+    <button class="btn btn-custom " onclick="count_space()">Count spaces</button>
+    <button class="btn btn-custom" onclick="count_newlines()">Count new lines</button>
+    <button class="btn btn-custom" onclick="lowerc()">Convert to small case</button>
+    <button class="btn btn-custom" onclick="upperc()">Capitalise</button>
+
+    <button class="btn btn-custom" onclick="tc()">Title Case</button>
+    <button class="btn btn-custom" onclick="check_pal()">Check palindrome</button>
+    <button class="btn btn-custom btn-highlight" onclick="extractFword()">Extract First Word</button>
+    <button class="btn btn-custom" onclick="replace_Space()">Replace all spaces with hyphens</button>
+    <button class="btn btn-custom" onclick="rev()">Reverse the characters</button>
+    <button class="btn btn-custom" onclick="sortt()">Sort the words</button>
+    <button class="btn btn-custom" onclick="longestWord()">Longest Word</button>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

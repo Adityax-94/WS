@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,300&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: #fafaf8;
+      font-family: 'Open Sans', sans-serif;
+      padding: 60px 24px;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: 'Merriweather', serif;
+      font-size: 1.8rem;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #999;
+      font-size: 0.88rem;
+      margin-bottom: 48px;
+    }
+
+    .cards {
+      display: flex;
+      gap: 24px;
+      max-width: 960px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 28px 24px;
+      width: 280px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    }
+
+    .stars {
+      color: #f5a623;
+      font-size: 1rem;
+      letter-spacing: 2px;
+      margin-bottom: 14px;
+    }
+
+    .review {
+      font-family: 'Merriweather', serif;
+      font-style: italic;
+      font-size: 0.88rem;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .person {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .person img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .person-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #111;
+    }
+
+    .person-role {
+      font-size: 0.78rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <h1>What People Say</h1>
+  <p class="subtitle">Feedback about Aditya Chavan's work</p>
+
+  <div class="cards">
+    <div class="card">
+      <div class="stars">★★★★★</div>
+      <p class="review">"Aditya built our college project front-end beautifully. Clean code, great attention to detail."</p>
+      <div class="person">
+        <img src="https://i.pravatar.cc/80?img=18" alt="Rohan">
+        <div>
+          <div class="person-name">Rohan Desai</div>
+          <div class="person-role">B.Tech Classmate</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="stars">★★★★★</div>
+      <p class="review">"His React components were smooth and responsive. Really impressed by his knowledge of AI/ML too."</p>
+      <div class="person">
+        <img src="https://i.pravatar.cc/80?img=44" alt="Prof. Joshi">
+        <div>
+          <div class="person-name">Prof. S. Joshi</div>
+          <div class="person-role">Faculty, B.Tech Dept.</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="stars">★★★★☆</div>
+      <p class="review">"Great team member during our hackathon. Handled the entire frontend solo and delivered on time."</p>
+      <div class="person">
+        <img src="https://i.pravatar.cc/80?img=29" alt="Neha">
+        <div>
+          <div class="person-name">Neha Kulkarni</div>
+          <div class="person-role">Hackathon Teammate</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

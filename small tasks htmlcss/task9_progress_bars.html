@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #0f0f0f;
+      font-family: 'Space Mono', monospace;
+      padding: 40px 20px;
+    }
+
+    .container { width: 100%; max-width: 480px; }
+
+    .heading {
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      color: #fff;
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    .name-tag {
+      color: #555;
+      font-size: 0.75rem;
+      margin-bottom: 36px;
+      margin-top: 4px;
+    }
+
+    .skill { margin-bottom: 28px; }
+
+    .label-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .label-row span { font-size: 0.82rem; color: #aaa; }
+    .label-row .percent { color: #fff; font-weight: 700; }
+
+    .bar-bg {
+      height: 10px;
+      background: #2a2a2a;
+      border-radius: 100px;
+      overflow: hidden;
+    }
+
+    .bar {
+      height: 100%;
+      border-radius: 100px;
+      width: 0;
+      animation: fill 1.4s ease forwards;
+    }
+
+    .bar.html  { background: linear-gradient(90deg, #e34c26, #f06529); animation-delay: 0.1s; --w: 80%; }
+    .bar.css   { background: linear-gradient(90deg, #264de4, #2965f1); animation-delay: 0.25s; --w: 80%; }
+    .bar.js    { background: linear-gradient(90deg, #f7df1e, #e6c800); animation-delay: 0.4s; --w: 70%; }
+    .bar.react { background: linear-gradient(90deg, #61dafb, #21a1c4); animation-delay: 0.55s; --w: 65%; }
+    .bar.aiml  { background: linear-gradient(90deg, #a855f7, #7c3aed); animation-delay: 0.7s; --w: 60%; }
+
+    @keyframes fill { to { width: var(--w); } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h2>// My Skills</h2>
+      <div class="name-tag">Aditya Chavan — B.Tech</div>
+    </div>
+
+    <div class="skill">
+      <div class="label-row"><span>HTML & CSS</span><span class="percent">80%</span></div>
+      <div class="bar-bg"><div class="bar html"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="label-row"><span>CSS</span><span class="percent">80%</span></div>
+      <div class="bar-bg"><div class="bar css"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="label-row"><span>JavaScript</span><span class="percent">70%</span></div>
+      <div class="bar-bg"><div class="bar js"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="label-row"><span>React</span><span class="percent">65%</span></div>
+      <div class="bar-bg"><div class="bar react"></div></div>
+    </div>
+
+    <div class="skill">
+      <div class="label-row"><span>AI / ML</span><span class="percent">60%</span></div>
+      <div class="bar-bg"><div class="bar aiml"></div></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Footer</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #f0ede8;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    footer {
+      background: #111;
+      color: #ccc;
+      padding: 56px 40px 28px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto 40px;
+    }
+
+    .brand-name {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .brand-name span { color: #f4a623; }
+
+    .about-text {
+      font-size: 0.88rem;
+      line-height: 1.7;
+      color: #777;
+    }
+
+    h4 {
+      color: #fff;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    .links { list-style: none; }
+
+    .links li { margin-bottom: 10px; }
+
+    .links a {
+      text-decoration: none;
+      color: #777;
+      font-size: 0.88rem;
+      transition: color 0.2s;
+    }
+
+    .links a:hover { color: #f4a623; }
+
+    .socials {
+      display: flex;
+      gap: 12px;
+      margin-top: 4px;
+    }
+
+    .socials a {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #1e1e1e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+
+    .socials a:hover { background: #f4a623; }
+
+    .footer-bottom {
+      border-top: 1px solid #222;
+      padding-top: 24px;
+      text-align: center;
+      font-size: 0.82rem;
+      color: #555;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 650px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="brand-name">Aditya<span>.</span>dev</div>
+        <p class="about-text">B.Tech student passionate about web development and AI/ML. Building projects, learning every day, and sharing knowledge along the way.</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Skills</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Connect</h4>
+        <div class="socials">
+          <a href="https://github.com/adityachavan" title="GitHub" target="_blank">🐙</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Aditya Chavan. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>

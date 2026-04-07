@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify – Web Player</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="spotify-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="sidebar-box">
+                <ul class="nav-links">
+                    <li><a href="#" class="active"><i class="fa-solid fa-house"></i> <span>Home</span></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i> <span>Search</span></a></li>
+                </ul>
+            </div>
+            <div class="sidebar-box library-box">
+                <div class="library-header">
+                    <button class="library-btn"><i class="fa-solid fa-book-open"></i> <span>Your Library</span></button>
+                    <div class="library-actions">
+                        <button><i class="fa-solid fa-plus"></i></button>
+                        <button><i class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="library-filters">
+                    <span class="filter-chip">Playlists</span>
+                    <span class="filter-chip">Podcasts & Shows</span>
+                    <span class="filter-chip">Albums</span>
+                </div>
+                <div class="playlist-list scrollable">
+                    <div class="playlist-item">
+                        <img src="https://picsum.photos/50/50?random=1" alt="Cover">
+                        <div class="playlist-info">
+                            <p class="playlist-title">Liked Songs</p>
+                            <p class="playlist-subtitle"><i class="fa-solid fa-thumbtack"
+                                    style="color:#1ed760;font-size:12px"></i> Playlist • 120 songs</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="https://picsum.photos/50/50?random=2" alt="Cover">
+                        <div class="playlist-info">
+                            <p class="playlist-title">Daily Mix 1</p>
+                            <p class="playlist-subtitle">Playlist • Spotify</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="https://picsum.photos/50/50?random=3" alt="Cover">
+                        <div class="playlist-info">
+                            <p class="playlist-title">Discover Weekly</p>
+                            <p class="playlist-subtitle">Playlist • Spotify</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="https://picsum.photos/50/50?random=4" alt="Cover">
+                        <div class="playlist-info">
+                            <p class="playlist-title">Lo-Fi Beats</p>
+                            <p class="playlist-subtitle">Playlist • Spotify</p>
+                        </div>
+                    </div>
+                    <div class="playlist-item">
+                        <img src="https://picsum.photos/50/50?random=5" alt="Cover">
+                        <div class="playlist-info">
+                            <p class="playlist-title">Coding Mix</p>
+                            <p class="playlist-subtitle">Playlist • Spotify</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main View -->
+        <main class="main-view">
+            <header class="topbar">
+                <div class="nav-arrows">
+                    <button class="arrow-btn"><i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="arrow-btn disabled"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+                <div class="topbar-actions">
+                    <button class="upgrade-btn">Explore Premium</button>
+                    <button class="install-btn"><i class="fa-regular fa-circle-down"></i> Install App</button>
+                    <button class="profile-btn"><i class="fa-regular fa-user"></i></button>
+                </div>
+            </header>
+
+            <div class="content scrollable">
+                <div class="greeting-section">
+                    <h2>Good afternoon</h2>
+                    <div class="recent-grid">
+                        <div class="recent-card">
+                            <img src="https://picsum.photos/80/80?random=6" alt="Cover">
+                            <span>Liked Songs</span>
+                            <button class="play-button"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <div class="recent-card">
+                            <img src="https://picsum.photos/80/80?random=7" alt="Cover">
+                            <span>Daily Mix 1</span>
+                            <button class="play-button"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <div class="recent-card">
+                            <img src="https://picsum.photos/80/80?random=8" alt="Cover">
+                            <span>Coding Mix</span>
+                            <button class="play-button"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <div class="recent-card">
+                            <img src="https://picsum.photos/80/80?random=9" alt="Cover">
+                            <span>Discover Weekly</span>
+                            <button class="play-button"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <div class="recent-card">
+                            <img src="https://picsum.photos/80/80?random=10" alt="Cover">
+                            <span>Lo-Fi Beats</span>
+                            <button class="play-button"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                        <div class="recent-card">
+                            <img src="https://picsum.photos/80/80?random=11" alt="Cover">
+                            <span>Release Radar</span>
+                            <button class="play-button"><i class="fa-solid fa-play"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shelf">
+                    <div class="shelf-header">
+                        <h2>Made For You</h2>
+                        <a href="#">Show all</a>
+                    </div>
+                    <div class="shelf-grid">
+                        <div class="media-card">
+                            <img src="https://picsum.photos/150/150?random=12" class="media-image" alt="Cover">
+                            <button class="play-button"><i class="fa-solid fa-play"></i></button>
+                            <div class="media-info">
+                                <p class="media-title">Daily Mix 1</p>
+                                <p class="media-desc">Joji, The Weeknd, Post Malone</p>
+                            </div>
+                        </div>
+                        <div class="media-card">
+                            <img src="https://picsum.photos/150/150?random=13" class="media-image" alt="Cover">
+                            <button class="play-button"><i class="fa-solid fa-play"></i></button>
+                            <div class="media-info">
+                                <p class="media-title">Daily Mix 2</p>
+                                <p class="media-desc">Daft Punk, Justice, deadmau5</p>
+                            </div>
+                        </div>
+                        <div class="media-card">
+                            <img src="https://picsum.photos/150/150?random=14" class="media-image" alt="Cover">
+                            <button class="play-button"><i class="fa-solid fa-play"></i></button>
+                            <div class="media-info">
+                                <p class="media-title">Release Radar</p>
+                                <p class="media-desc">Catch up on the latest releases</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Now Playing -->
+    <footer class="now-playing-bar">
+        <div class="now-playing-left">
+            <img src="https://picsum.photos/56/56?random=12" alt="Cover">
+            <div class="track-info">
+                <span class="track-name">Starboy</span>
+                <span class="artist-name">The Weeknd, Daft Punk</span>
+            </div>
+            <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="now-playing-center">
+            <div class="player-controls">
+                <button class="control-btn"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="control-btn"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="play-pause-btn"><i class="fa-solid fa-play"></i></button>
+                <button class="control-btn"><i class="fa-solid fa-forward-step"></i></button>
+                <button class="control-btn"><i class="fa-solid fa-repeat"></i></button>
+            </div>
+            <div class="playback-bar">
+                <span class="time-current">1:04</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 30%;"></div>
+                    </div>
+                </div>
+                <span class="time-total">3:50</span>
+            </div>
+        </div>
+
+        <div class="now-playing-right">
+            <button class="extra-btn"><i class="fa-solid fa-microphone"></i></button>
+            <button class="extra-btn"><i class="fa-solid fa-list-ul"></i></button>
+            <button class="extra-btn"><i class="fa-solid fa-computer"></i></button>
+            <div class="volume-bar">
+                <button class="extra-btn"><i class="fa-solid fa-volume-high"></i></button>
+                <div class="progress-bar-container">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+            </div>
+            <button class="extra-btn"><i class="fa-solid fa-up-right-and-down-left-from-center"></i></button>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f0ede8;
+      font-family: 'Lato', sans-serif;
+    }
+
+    .card {
+      background: #fff;
+      width: 300px;
+      border-radius: 16px;
+      padding: 36px 28px;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 48px rgba(0,0,0,0.18);
+    }
+
+    .profile-img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #c9a96e;
+      margin-bottom: 16px;
+    }
+
+    .name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: #1a1a1a;
+      margin-bottom: 4px;
+    }
+
+    .course {
+      font-size: 0.78rem;
+      color: #c9a96e;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    .bio {
+      font-size: 0.88rem;
+      color: #777;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      font-weight: 300;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      justify-content: center;
+      margin-bottom: 24px;
+    }
+
+    .skill-tag {
+      background: #f5f2ee;
+      color: #555;
+      font-size: 0.72rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+
+    .socials {
+      display: flex;
+      justify-content: center;
+    }
+
+    .socials a {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: #f5f2ee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.2s;
+    }
+
+    .socials a:hover { background: #c9a96e; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img class="profile-img" src="photo.jpeg" alt="Aditya Chavan">
+    <h2 class="name">Aditya Chavan</h2>
+    <div class="course">B.Tech Student</div>
+    <p class="bio">Passionate B.Tech student building things for the web and exploring AI/ML. Loves clean code and smart solutions.</p>
+    <div class="skills">
+      <span class="skill-tag">HTML & CSS</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">React</span>
+      <span class="skill-tag">AI/ML</span>
+    </div>
+    <div class="socials">
+      <a href="https://github.com/adityachavan" title="GitHub" target="_blank">🐙</a>
+    </div>
+  </div>
+</body>
+</html>

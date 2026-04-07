@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=Lato:wght@400&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Lato', sans-serif;
+      background: #f2f2f2;
+    }
+
+    nav {
+      background: #0f0f0f;
+      padding: 0 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      position: relative;
+    }
+
+    .logo {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.3rem;
+      color: #fff;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    .logo span { color: #f4a623; }
+
+    .menu {
+      display: flex;
+      list-style: none;
+      gap: 32px;
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: #ccc;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      transition: color 0.2s;
+    }
+
+    .menu a:hover { color: #f4a623; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .hamburger span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 600px) {
+      .hamburger { display: flex; }
+
+      .menu {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background: #1a1a1a;
+        z-index: 10;
+      }
+
+      .menu.open { display: flex; }
+
+      .menu li a {
+        display: block;
+        padding: 14px 40px;
+        border-bottom: 1px solid #2a2a2a;
+      }
+
+      .menu li a:hover { background: #222; color: #f4a623; }
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h2 { font-size: 1.4rem; color: #222; margin-bottom: 8px; }
+    .hero p { font-size: 0.9rem; color: #888; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="#">Aditya<span>.</span></a>
+    <ul class="menu" id="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <div class="hamburger" onclick="document.getElementById('menu').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <h2>Responsive Navigation Bar</h2>
+    <p>Resize the window to see the mobile hamburger menu — made by Aditya Chavan</p>
+  </div>
+
+</body>
+</html>

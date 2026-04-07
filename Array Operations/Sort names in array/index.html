@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafbfc;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: #fff;
+            width: 100%;
+            max-width: 600px;
+            padding: 40px;
+            border-bottom: 2px solid #f0f0f0;
+            min-height: 400px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #111;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .controls {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            padding: 7px 10px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            width: 170px;
+            color: #333;
+        }
+
+        input[type="text"]::placeholder {
+            color: #888;
+        }
+
+        .btn {
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #3367d6;
+        }
+
+        .task-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .task-list li {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 15px;
+            font-size: 16px;
+            color: #222;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>SOrt names in Array</h2>
+
+        <div class="controls">
+            <input type="text" placeholder="Enter a task" id="task">
+            <button class="btn" onclick="addTask()">Add Name</button>
+            <button class="btn" onclick="sort()">Sort</button>
+            <button class="btn" onclick="clearr()">Reset</button>
+        </div>
+
+        <div id="tasksUL"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
