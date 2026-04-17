@@ -1,0 +1,69 @@
+:root {
+  --page-bg: #f4f6fb;
+  --text-main: #1e2a3a;
+  --muted: #6b7280;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at top left, #ffffff 0%, var(--page-bg) 50%, #edf1f8 100%);
+  color: var(--text-main);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.generator-card {
+  max-width: 840px;
+  background: #ffffff;
+  border: 1px solid #dfe3ea;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 10px 30px rgba(31, 41, 55, 0.08);
+}
+
+h1 {
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}
+
+.form-label,
+.form-check-label {
+  font-size: 1rem;
+}
+
+#generatedPassword {
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+}
+
+.progress {
+  height: 1.2rem;
+  border-radius: 999px;
+  background-color: #e7ecf3;
+}
+
+.progress-bar {
+  transition: width 250ms ease;
+}
+
+.strength-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.copy-msg {
+  font-size: 0.95rem;
+  color: var(--muted);
+  min-height: 1.3rem;
+}
+
+@media (max-width: 576px) {
+  .generator-card {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .strength-text {
+    font-size: 1.25rem;
+  }
+}

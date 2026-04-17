@@ -1,23 +1,30 @@
-var rotate = function(matrix=[[1,2,3],[4,5,6],[7,8,9]]) {
+var reverse = function(x) {
 
-        trip=[]
-        op=[]
-
-        for (i=0;i<=matrix[0].length-1;i++)
+    let sign=0
+    let op=""
+    num=x.toString()
+    console.log(num)
+    for (let i=num.length-1;i>=0;i--)
+    {
+        if(num[i]=="-")
         {
-            for (j=matrix.length-1;j>=0;j--)
-            {
-                trip.push(matrix[j][i])
-                
-            }
-            op.push(trip)
-            trip=[]
+            sign=1
+        }else{
+        op=op+num[i]
         }
+    }
+     console.log(op)
 
-        matrix=op
 
-    console.log(matrix)
-  
-};
+    if(sign==1){
 
-rotate()
+        num1= +op
+        console.log(num1)
+        return num1- (num1*2)
+    
+    }else{
+            return +op
+    }
+}
+
+console.log(reverse(123))
